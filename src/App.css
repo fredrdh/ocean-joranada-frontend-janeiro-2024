@@ -10,7 +10,24 @@
 .card > h2 {
   font-size: 32px;
   color: yellow;
+  border-left: 6px solid yellow;
 }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  max-width: 300px;
+  justify-content: center;
+}
+
+.tag {
+  background-color: black;
+  color: white
+  font
+}
+
 
 .card > img {
   border-radius: 10px;

@@ -1,9 +1,18 @@
-function Card() {
+function Card(props) {
+  console.log(props)
+
     return (
         <>
-          <div className='card'>
+          <div className="card">
             <h2>Fry</h2>
-            <img src="https://comicvine.gamespot.com/a/uploads/square_small/11/114183/6665973-%24%20%282%29.png" />
+            
+            <div className="tags"></div>
+              <div className="tag"> Status: Vivo</div>
+              <div className="tag"> Espécie: Humana</div>
+              <div className="tag"> Origem: Terra</div>
+            </div>
+
+            <img src="{item.img}" />
           </div>
         </>
     )

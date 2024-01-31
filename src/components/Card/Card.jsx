@@ -1,21 +1,25 @@
 function Card(props) {
-  console.log(props)
+  //console.log(props)
 
-    return (
-        <>
-          <div className="card">
-            <h2>Fry</h2>
+  const item = props.item
+
+  //console.log(item)
+
+  return (
+    <>
+      <div className="card">
+        <h2>{item.name}</h2>
             
-            <div className="tags"></div>
-              <div className="tag"> Status: Vivo</div>
-              <div className="tag"> Espécie: Humana</div>
-              <div className="tag"> Origem: Terra</div>
-            </div>
+        <div className="tags">
+          <div className="tag"> Status: Vivo</div>
+          <div className="tag"> Espécie: Humana</div>
+          <div className="tag"> Origem: Terra</div>
+        </div>
 
-            <img src="{item.img}" />
-          </div>
-        </>
-    )
+        <img src={item.image} />
+      </div>
+    </>
+  )
 }
 
 export default Card

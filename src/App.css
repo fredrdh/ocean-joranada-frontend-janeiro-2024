@@ -1,3 +1,11 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 16px;
+}
+
 .card {
   border: 1px solid white;
   border-radius: 10px;
@@ -13,6 +21,10 @@
   border-left: 6px solid yellow;
 }
 
+#root {
+  width: 100%
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -23,11 +35,13 @@
 }
 
 .tag {
-  background-color: black;
-  color: white
-  font
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4px 12px;
 }
-
 
 .card > img {
   border-radius: 10px;
